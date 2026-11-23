@@ -1,0 +1,7 @@
+*
+!Dockerfile
+!scripts
+scripts/*
+!scripts/unpack.sh
+!scripts/pack.sh
+!scripts/check-space.sh

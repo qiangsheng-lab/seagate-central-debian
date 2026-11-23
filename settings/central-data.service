@@ -1,0 +1,11 @@
+[Unit]
+Description=Prepare the Seagate Central data volume for file and media sharing
+BindsTo=Data.mount
+After=Data.mount
+Before=smbd.service minidlna.service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/mountpoint -q /Data
+ExecStart=/usr/bin/systemd-tmpfiles --create /usr/local/share/central-data.conf
+RemainAfterExit=yes

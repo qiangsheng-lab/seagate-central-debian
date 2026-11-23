@@ -1,0 +1,6 @@
+.DS_Store
+dist/
+*.img
+*.initial
+initial-passwords.txt
+初始密码.txt
